@@ -8,14 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+    
+    @State var isPresenting = false
+    @Binding var seconds: Int
+    
+    init(seconds: Binding<Int>) {
+        
+        print("[ContentView]", #function)
+        self._seconds = seconds
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    var body: some View {
+        
+        print("[ContentView]", #function)
+        return Button(action: {
+            isPresenting = true
+        }, label: {
+            Text("Toggle \(self.seconds)")
+        }).sheet(
+            isPresented: $isPresenting,
+            content: {
+                ViewControllerWrapper(count: self.$seconds)
+                    .onAppear {
+                        print("[ContentView] onAppear")
+                    }
+                    .onDisappear {
+                        print("[ContentView] onDisAppear")
+                    }
+            })
     }
 }

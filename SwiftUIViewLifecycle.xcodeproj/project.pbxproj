@@ -11,6 +11,7 @@
 		FCA96D702600F78F0072FD44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA96D6F2600F78F0072FD44 /* ContentView.swift */; };
 		FCA96D722600F7900072FD44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA96D712600F7900072FD44 /* Assets.xcassets */; };
 		FCA96D752600F7900072FD44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA96D742600F7900072FD44 /* Preview Assets.xcassets */; };
+		FCA96D7E2600F7A60072FD44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA96D7D2600F7A60072FD44 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		FCA96D712600F7900072FD44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCA96D742600F7900072FD44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCA96D762600F7900072FD44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCA96D7D2600F7A60072FD44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				FCA96D6D2600F78F0072FD44 /* SwiftUIViewLifecycleApp.swift */,
 				FCA96D6F2600F78F0072FD44 /* ContentView.swift */,
+				FCA96D7D2600F7A60072FD44 /* ViewController.swift */,
 				FCA96D712600F7900072FD44 /* Assets.xcassets */,
 				FCA96D762600F7900072FD44 /* Info.plist */,
 				FCA96D732600F7900072FD44 /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA96D7E2600F7A60072FD44 /* ViewController.swift in Sources */,
 				FCA96D702600F78F0072FD44 /* ContentView.swift in Sources */,
 				FCA96D6E2600F78F0072FD44 /* SwiftUIViewLifecycleApp.swift in Sources */,
 			);
